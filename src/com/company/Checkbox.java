@@ -2,19 +2,11 @@ package com.company;
 
 import java.util.ArrayList;
 
-public class Checkbox {
+public class Checkbox extends Question {
 
-    private String question;
-    private String correctAnswer;
     private ArrayList<String> answerOptions;
 
-    // answer options
-    // point value
-
-    // what is your favorite color?
-    // a: blue, b: green, c: red, d: purple
-    // blue, green, red, purple
-
-    // grade question
-    // ask question
+    public Checkbox(String question, String correctAnswer, Integer pointValue, ArrayList<String> answerOptions) {
+        super(question, correctAnswer, pointValue);
+    }
 }
